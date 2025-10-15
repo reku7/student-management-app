@@ -15,7 +15,7 @@ mongoose.connect("mongodb://localhost:27017/studentsdb", {
 .then(() => console.log("connnected to mongoDB"))
 .catch((err) => console.error(" Mongo connection error:", err));
 
-app.use("/students, studentRoutes"); //use router
+app.use("/students", studentRoutes); //use router
 
 app.listen(3000, () => console.log("Server is running on https://localhost:3000"));
 
